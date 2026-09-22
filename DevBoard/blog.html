@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>DevBoard - Blogs</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+
+<body class="font-['Poppins'] bg-[#c5dbff] text-[#111] p-5">
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="max-w-[1050px] mx-auto">
+
+
+        <!-- ================= HEADER ================= -->
+
+        <header
+            class="bg-white rounded-xl p-5 mb-5 flex items-center justify-between">
+
+            <div>
+
+                <h1 class="text-2xl font-bold">
+
+                    DevBoard Blogs
+
+                </h1>
+
+                <p class="text-sm text-gray-500 mt-1">
+
+                    Explore the answers to the common
+                    JavaScript and DOM questions.
+
+                </p>
+
+            </div>
+
+
+            <!-- Back button -->
+
+            <button
+                onclick="history.back()"
+                class="bg-[#4657e8] hover:bg-[#303fc7] text-white px-4 py-2 rounded-md cursor-pointer">
+
+                Back to Desk
+
+            </button>
+
+        </header>
+
+
+
+        <!-- ================= BLOG QUESTIONS ================= -->
+
+        <section class="space-y-5">
+
+
+            <!-- QUESTION 1 -->
+
+            <article
+                class="bg-white rounded-xl p-6">
+
+                <h2 class="text-lg font-semibold mb-3">
+
+                    Question 1: What are the different ways
+                    to select an element in the DOM?
+
+                </h2>
+
+
+                <p class="text-gray-600 leading-7">
+
+                    There are several ways to select elements
+                    from the DOM using JavaScript.
+
+                </p>
+
+
+                <div
+                    class="mt-4 bg-[#f4f4fc] p-4 rounded-lg">
+
+                    <ul class="list-disc ml-5 space-y-2">
+
+                        <li>
+                            <strong>getElementById()</strong>
+                            - selects an element by its ID.
+                        </li>
+
+                        <li>
+                            <strong>getElementsByClassName()</strong>
+                            - selects elements by class name.
+                        </li>
+
+                        <li>
+                            <strong>getElementsByTagName()</strong>
+                            - selects elements by tag name.
+                        </li>
+
+                        <li>
+                            <strong>querySelector()</strong>
+                            - selects the first matching element.
+                        </li>
+
+                        <li>
+                            <strong>querySelectorAll()</strong>
+                            - selects all matching elements.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- QUESTION 2 -->
+
+            <article
+                class="bg-white rounded-xl p-6">
+
+                <h2 class="text-lg font-semibold mb-3">
+
+                    Question 2: What is the difference between
+                    innerHTML, innerText, and textContent?
+
+                </h2>
+
+
+                <div
+                    class="overflow-x-auto">
+
+                    <table class="w-full border-collapse">
+
+                        <thead>
+
+                            <tr class="bg-[#4657e8] text-white">
+
+                                <th class="border p-3 text-left">
+                                    Property
+                                </th>
+
+                                <th class="border p-3 text-left">
+                                    Meaning
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td class="border p-3 font-semibold">
+                                    innerHTML
+                                </td>
+
+                                <td class="border p-3">
+                                    Gets or sets HTML content
+                                    including HTML tags.
+                                </td>
+
+                            </tr>
+
+
+                            <tr class="bg-gray-50">
+
+                                <td class="border p-3 font-semibold">
+                                    innerText
+                                </td>
+
+                                <td class="border p-3">
+                                    Gets the visible text
+                                    inside an element.
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td class="border p-3 font-semibold">
+                                    textContent
+                                </td>
+
+                                <td class="border p-3">
+                                    Gets all text content,
+                                    including hidden text.
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- QUESTION 3 -->
+
+            <article
+                class="bg-white rounded-xl p-6">
+
+                <h2 class="text-lg font-semibold mb-3">
+
+                    Question 3: What is event delegation
+                    in the DOM?
+
+                </h2>
+
+
+                <p class="text-gray-600 leading-7">
+
+                    Event delegation is a JavaScript technique
+                    where we add a single event listener to a
+                    parent element instead of adding separate
+                    event listeners to every child element.
+
+                </p>
+
+
+                <div
+                    class="mt-4 bg-[#f4f4fc] p-4 rounded-lg">
+
+                    <p>
+
+                        For example, instead of adding a click
+                        event to every button, we can add one
+                        event listener to their parent element.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- QUESTION 4 -->
+
+            <article
+                class="bg-white rounded-xl p-6">
+
+                <h2 class="text-lg font-semibold mb-3">
+
+                    Question 4: What is event bubbling
+                    in the DOM?
+
+                </h2>
+
+
+                <p class="text-gray-600 leading-7">
+
+                    Event bubbling is a process where an event
+                    starts from the element where the event
+                    occurred and then moves upward through
+                    its parent elements.
+
+                </p>
+
+
+                <div
+                    class="mt-4 bg-[#f4f4fc] p-4 rounded-lg">
+
+                    <p>
+
+                        For example:
+
+                    </p>
+
+
+                    <p class="mt-2 font-mono">
+
+                        Button → Div → Section → Body
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
